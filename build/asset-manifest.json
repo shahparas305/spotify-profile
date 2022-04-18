@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.17c4123e.css",
+    "main.js": "/static/js/main.121a432e.js",
+    "static/js/787.8f29a1ac.chunk.js": "/static/js/787.8f29a1ac.chunk.js",
+    "static/media/lilbaby.jpg": "/static/media/lilbaby.50a1c8118a0fe336befa.jpg",
+    "static/media/beatbox.jpg": "/static/media/beatbox.b6f33ee73258cffe0a65.jpg",
+    "index.html": "/index.html",
+    "main.17c4123e.css.map": "/static/css/main.17c4123e.css.map",
+    "main.121a432e.js.map": "/static/js/main.121a432e.js.map",
+    "787.8f29a1ac.chunk.js.map": "/static/js/787.8f29a1ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17c4123e.css",
+    "static/js/main.121a432e.js"
+  ]
+}
