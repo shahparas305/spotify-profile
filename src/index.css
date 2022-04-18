@@ -17,6 +17,17 @@ body {
   --light-green: #1ed760;
 }
 
+/* FONTS */
+@font-face {
+  font-family: "Circular Std Bold";
+  src: url('CircularStd-Bold.otf') format("opentype");   
+}
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: url('CircularStd-Book.otf') format("opentype");   
+}
+
 
 /* SCROLLBAR */
 ::-webkit-scrollbar {
