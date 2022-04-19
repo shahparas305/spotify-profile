@@ -28,7 +28,7 @@ function Profile({token, logout}) {
       headers: {
         Authorization: `Bearer ${token}`
       }
-    })
+    }).catch(err => logout());
     playlistsNum = data.total
     setPlaylistNumState(playlistsNum)
   }
