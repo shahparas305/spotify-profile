@@ -34,6 +34,7 @@ function App() {
 
   const logout = () => {
     setToken('')
+    localStorage.clear();
     window.localStorage.removeItem('token')
   }
   
