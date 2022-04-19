@@ -7,7 +7,6 @@ import axios from 'axios'
 import {Link} from 'react-router-dom'
 import Loading from '../components/Loading/Loading'
 
-let error = false
 let userData = {}
 let playlistsNum = ''
 let following = ''
@@ -28,10 +27,7 @@ function Profile({token, logout}) {
       headers: {
         Authorization: `Bearer ${token}`
       }
-    }).catch(err => () => {
-      error = true
-      logout()
-    });
+    }).catch(err => logout());
     playlistsNum = data.total
     setPlaylistNumState(playlistsNum)
   }
@@ -118,10 +114,7 @@ function Profile({token, logout}) {
     getFollowingArtists();
   }, [])
   
-  if(error) {
-    return <LogIn></LogIn>
-  }
-  
+
   if (!tracks) {
     return <Loading/>;
   } else {
