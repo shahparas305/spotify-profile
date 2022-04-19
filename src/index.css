@@ -20,12 +20,12 @@ body {
 /* FONTS */
 @font-face {
   font-family: "Circular Std Bold";
-  src: url('../CircularStd-Bold.otf') format("opentype");   
+  src: url('CircularStd-Bold.otf') format("opentype");   
 }
 
 @font-face {
   font-family: "Circular Std Book";
-  src: url('../CircularStd-Book.otf') format("opentype");   
+  src: url('CircularStd-Book.otf') format("opentype");   
 }
 
 
