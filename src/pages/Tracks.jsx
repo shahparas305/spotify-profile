@@ -4,7 +4,7 @@ import Loading from '../components/Loading/Loading'
 import axios from 'axios'
 
 
-function Tracks({token}) {
+function Tracks({token, logout}) {
   let [tracks, setTracks] = useState()
   let tracksList = [] 
 
@@ -13,7 +13,7 @@ function Tracks({token}) {
       headers: {
         Authorization: `Bearer ${token}`
       },
-    })
+    }).catch(err => logout());
     console.log(data)
     data.items.forEach((i) => {
       tracksList.push({
