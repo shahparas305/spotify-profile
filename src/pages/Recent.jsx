@@ -6,7 +6,7 @@ import Loading from '../components/Loading/Loading'
 
 
 
-function Recent({token}) {
+function Recent({token, logout}) {
   let [songs, setSongs] = useState()
   let songsArray = []
 
@@ -16,7 +16,7 @@ function Recent({token}) {
       headers: {
         Authorization: `Bearer ${token}`
       },
-    })
+    }).catch(err => logout());
     data.items.forEach((i) => {
       songsArray.push({
         //artists, name, song image, song album, duration
