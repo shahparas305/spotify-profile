@@ -7,7 +7,7 @@ import axios from 'axios'
 import Loading from '../components/Loading/Loading'
 
 
-function PlaylistOverview({token}) {
+function PlaylistOverview({token, logout}) {
   const location = useLocation()
   const { id } = location.state
   let [playlistInfoState, setPlaylistInfoState] = useState()
@@ -20,7 +20,7 @@ function PlaylistOverview({token}) {
       headers: {
         Authorization: `Bearer ${token}`
       },
-    })
+    }).catch(err => logout());
     playlistInfo = {
       image: data.images[0].url,
       title: data.name,
