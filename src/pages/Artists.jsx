@@ -4,7 +4,7 @@ import axios from 'axios'
 import Loading from '../components/Loading/Loading'
 
 
-function Artists({token}) {
+function Artists({token, logout}) {
   let [artists, setArtists] = useState()
   let artistsList = []
   let image = ''
@@ -15,7 +15,7 @@ function Artists({token}) {
       headers: {
         Authorization: `Bearer ${token}`
       },
-    })
+    }).catch(err => logout());
     console.log(data)
     data.items.forEach((i) => {
 
