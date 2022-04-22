@@ -5,7 +5,7 @@ import Loading from '../components/Loading/Loading'
 
 
 
-function Playlists({token}) {
+function Playlists({token, logout}) {
   let [playlist, setPlaylist] = useState()
   let playlistArray = []
 
@@ -14,7 +14,7 @@ function Playlists({token}) {
       headers: {
         Authorization: `Bearer ${token}`
       },
-    })
+    }).catch(err => logout());
     data.items.forEach((i) => {
       playlistArray.push({
         name: i.name,
