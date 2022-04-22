@@ -7,7 +7,7 @@ import Loading from '../components/Loading/Loading'
 let artistData = {}
 let array = []
 
-function ArtistOverview({token}) {
+function ArtistOverview({token, logout}) {
   const location = useLocation()
   const { id } = location.state
   let [artistDataState, setArtistDataState] = useState()
@@ -19,7 +19,7 @@ function ArtistOverview({token}) {
       headers: {
         Authorization: `Bearer ${token}`
       },
-    })
+    }).catch(err => logout());
     // console.log(data)
     if((data.images).length === 0) {
       artistImage = ''
