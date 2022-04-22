@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom'
 import axios from 'axios'
 import Loading from '../components/Loading/Loading'
 
-function TrackOverview({token}) {
+function TrackOverview({token, logout}) {
   const location = useLocation()
   const { id } = location.state
   let [trackDataState, setTrackDataState] = useState()
@@ -25,7 +25,7 @@ function TrackOverview({token}) {
       headers: {
         Authorization: `Bearer ${token}`
       },
-    })
+    }).catch(err => logout());
     audioFeatures = {
       key: data.track.key,
       modality: data.track.mode,
