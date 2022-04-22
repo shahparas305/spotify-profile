@@ -49,10 +49,10 @@ function App() {
           <main className='container'>
             <Routes>
               <Route path='/' element={<Profile logout={logout} token={token}/>}></Route>
-              <Route path='/tracks' element={<Tracks token={token} />}></Route>
-              <Route path='/artists' element={<Artists token={token} />} />
-              <Route path='/recent' element={<Recent token={token} />}></Route>
-              <Route path='/playlists' element={<Playlists token={token}/>}></Route>
+              <Route path='/tracks' element={<Tracks logout={logout} token={token} />}></Route>
+              <Route path='/artists' element={<Artists logout={logout} token={token} />} />
+              <Route path='/recent' element={<Recent logout={logout} token={token} />}></Route>
+              <Route path='/playlists' element={<Playlists logout={logout} token={token}/>}></Route>
               <Route path='/overview' element={<ArtistOverview token={token}/>}></Route>
               <Route path='/track' element={<TrackOverview token={token}/>}></Route>
               <Route path='/playlistoverview' element={<PlaylistOverview token={token}/>}></Route>
