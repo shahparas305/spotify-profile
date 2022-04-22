@@ -53,9 +53,9 @@ function App() {
               <Route path='/artists' element={<Artists logout={logout} token={token} />} />
               <Route path='/recent' element={<Recent logout={logout} token={token} />}></Route>
               <Route path='/playlists' element={<Playlists logout={logout} token={token}/>}></Route>
-              <Route path='/overview' element={<ArtistOverview token={token}/>}></Route>
-              <Route path='/track' element={<TrackOverview token={token}/>}></Route>
-              <Route path='/playlistoverview' element={<PlaylistOverview token={token}/>}></Route>
+              <Route path='/overview' element={<ArtistOverview logout={logout} token={token}/>}></Route>
+              <Route path='/track' element={<TrackOverview logout={logout} token={token}/>}></Route>
+              <Route path='/playlistoverview' element={<PlaylistOverview logout={logout} token={token}/>}></Route>
               <Route path='/*' element={<NotFound/>}></Route>
             </Routes>
           </main>
