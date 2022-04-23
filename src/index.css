@@ -65,7 +65,7 @@ body {
 }
 
 .btn--gray {
-  border: 0.1px solid #FFFFFF;
+  border: 1.5px solid #FFFFFF;
   background-color: var(--primary-color-light);
 
 }
