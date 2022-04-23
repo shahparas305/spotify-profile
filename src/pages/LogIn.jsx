@@ -11,7 +11,7 @@ function LogIn() {
     return (
         <div className='login'>
             <div className='login__title'>Spotify Profile</div>
-            <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPES}`}>
+            <a className="login__link" href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPES}`}>
                 <Button className='login__button' text={'Log in to Spotify'} color={'green'}/>
             </a>
         </div>
