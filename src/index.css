@@ -18,15 +18,15 @@ body {
 }
 
 /* FONTS */
-/* @font-face {
+@font-face {
   font-family: "Circular Std Bold";
-  src: url('CircularStd-Bold.otf') format("opentype");   
+  src: url('circular-bold.otf') format("opentype");   
 }
 
 @font-face {
   font-family: "Circular Std Book";
-  src: url('CircularStd-Book.otf') format("opentype");   
-} */
+  src: url('circular-book.otf') format("opentype");   
+}
 
 
 /* SCROLLBAR */
