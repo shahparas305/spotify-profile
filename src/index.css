@@ -71,6 +71,11 @@ body {
 .btn--green {
   background-color:rgb(25, 190, 83);
   border: none;
+  text-decoration: none;
+}
+
+.btn--green:visited, .btn--green:link {
+  text-decoration: none;
 }
 
 .btn--green:hover {
