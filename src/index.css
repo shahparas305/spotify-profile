@@ -315,7 +315,6 @@ body {
 
 /* BEGIN LOGIN */
 .login {
-  margin: -75px -80px;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -328,6 +327,11 @@ body {
   font-family: 'Circular Std Bold', sans-serif;
   padding-bottom: 20px;
 }
+
+.login__link, .login__link:visited, .login__link:link {
+  text-decoration: none;
+}
+
 
 
 /* BEGIN NAVBAR  */
