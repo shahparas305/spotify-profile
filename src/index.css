@@ -4,8 +4,6 @@ body {
   box-sizing: border-box;
   font-family: 'Circular Std Book', 'Times New Roman', Times, serif;
   background-color: var(--primary-color-light);
-
-  /* padding: 75px 80px; */
 }
 
 
@@ -174,14 +172,14 @@ body {
 .artist__container__list {
   display: flex;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .artist__img__list {
   height: 50px;
   width: 50px;
-  border-radius: 50%;
-  padding-right: 20px;
+  clip-path: circle();
+  margin-right: 20px;
 }
 
 .artistlist__grid {
@@ -331,8 +329,6 @@ body {
 .login__link, .login__link:visited, .login__link:link {
   text-decoration: none;
 }
-
-
 
 /* BEGIN NAVBAR  */
 .navbar {
@@ -980,6 +976,7 @@ background-color: var(--primary-color-light);
 
 /* BEGIN ARTIST OVERVIEW */
 .artistoverview__container {
+  padding: 75px 80px;
   display: grid;
   place-items: center;
   text-align: center;
