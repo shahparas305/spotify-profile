@@ -1032,6 +1032,34 @@ background-color: var(--primary-color-light);
   font-size: 12px;
   padding-top: 5px;
 }
+
+@media(max-width: 770px) {
+  .artistoverview__container {
+    padding: 0;
+  }
+
+  .artistoverview__img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .artistoverview__stats {
+    flex-direction: column;
+  }
+
+  .artistoverview__followers__container,
+.artistoverview__genres__container,
+.artistoverview__popularity__container {
+  padding-right: 0;
+  margin-bottom: 20px;
+}
+
+.artistoverview__title {
+  font-size: 55px;
+  font-family: 'Circular Std Bold', sans-serif;
+  padding-bottom: 20px;
+}
+}
 /* END ARTIST OVERVIEW */
 
 /* END PAGES */
