@@ -1,6 +1,7 @@
 import React from 'react'
 import IconInfo from './assets/info'
 import {Link} from 'react-router-dom'
+import blackimage from './assets/blackimage3.jpg'
 
 function Artist({ artist, type }) {
     const {name, image, id} = artist
@@ -23,7 +24,7 @@ function Artist({ artist, type }) {
             <div className='artistitem'>
                 <Link to='/overview' state={{ id: idString }}>
                     <div className='artist__img__grid--c'>
-                        <img className='artist__img__grid' src={image}/>
+                        {image ? <img className='artist__img__grid' src={image}/> : <img className='artist__img__grid' src={blackimage}/>}
                         <div className='infoicon--c'>
                             <IconInfo></IconInfo>
                         </div>
