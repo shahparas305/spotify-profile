@@ -55,7 +55,7 @@ function Navbar() {
           </Link>   
           <Link to='/recent'  ref={recent} class="navbar__link__item navbar__recent" onClick={() => changeActiveBtn('recent')}>
             <img src={IconRecent} class="navbar__recent__icon"/>
-            <div className='navbar__icon__title'>Recent</div>
+            <div className='navbar__icon__title navbar__title__recent'>Recent</div>
           </Link>    
           <Link to='/playlists'  ref={playlists} class="navbar__link__item navbar__playlists" onClick={() => changeActiveBtn('playlists')}>
             <IconPlaylist className="navbar__profile__icon"/>
