@@ -471,6 +471,14 @@ body {
     border-top: 5px solid var(--light-green);
     background-color: var(--primary-color-light);
   }
+  
+  .navbar__title__recent {
+    margin-top: -4px;
+  }
+
+  .navbar__recent__icon {
+    margin-top: -10px;
+  }
 }
 /* END NAVBAR */
 
