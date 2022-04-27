@@ -6,6 +6,7 @@ import IconMicrophone from './assets/microphone'
 import IconMusic from './assets/music'
 import IconTime from './assets/time'
 import IconPlaylist from './assets/playlist'
+import IconRecent from './assets/recentsvg.svg'
 import {FaGithub} from 'react-icons/fa'
 
 
@@ -53,7 +54,7 @@ function Navbar() {
             <div className='navbar__icon__title'>Tracks</div>
           </Link>   
           <Link to='/recent'  ref={recent} class="navbar__link__item navbar__recent" onClick={() => changeActiveBtn('recent')}>
-            <IconTime className="navbar__profile__icon"/>
+            <img src={IconRecent} class="navbar__recent__icon"/>
             <div className='navbar__icon__title'>Recent</div>
           </Link>    
           <Link to='/playlists'  ref={playlists} class="navbar__link__item navbar__playlists" onClick={() => changeActiveBtn('playlists')}>
