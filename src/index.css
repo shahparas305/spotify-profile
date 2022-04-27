@@ -429,6 +429,12 @@ body {
   padding-bottom: 5px;
 }
 
+.navbar__recent__icon {
+  filter: invert(72%) sepia(2%) saturate(0%) hue-rotate(32deg) brightness(87%) contrast(84%);
+  height: 40px;
+  width: 40px;
+}
+
 @media(max-width: 770px) {
   .navbar__logo--c, .navbar__github__logo--c {
     display: none;
