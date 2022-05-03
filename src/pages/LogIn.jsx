@@ -3,7 +3,7 @@ import Button from '../components/Button'
 
 function LogIn() {
     const CLIENT_ID = 'daf189e0ddd44fe58d14e311153307e3'
-    const REDIRECT_URI = 'https://spotify-profile305.netlify.app'
+    const REDIRECT_URI = 'https://spotify305.netlify.app'
     const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize'
     const RESPONSE_TYPE = "token"
     const SCOPES = 'user-top-read%20user-read-recently-played%20playlist-read-private%20user-follow-read'
